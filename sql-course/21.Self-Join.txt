@@ -1,0 +1,14 @@
+select e.ename, m.ename 
+from emp e, emp m;
+
+select e.ename, m.ename 
+from emp e, emp m
+where e.empno = m.empno;
+
+select e.ename, m.ename 
+from emp e, emp m
+where e.mgr = m.empno;
+
+select e.ename as employee, m.ename as manager
+from emp e LEFT JOIN emp m
+on e.mgr = m.empno;

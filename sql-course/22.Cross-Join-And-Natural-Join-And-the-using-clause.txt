@@ -1,0 +1,21 @@
+select * 
+from emp, dept;
+
+select * 
+from emp CROSS JOIN dept;
+
+select ename, mgr, loc 
+from emp CROSS JOIN dept;
+
+select ename, mgr, loc 
+from emp NATURAL JOIN dept;
+
+select ename, mgr, loc 
+from emp JOIN dept using (deptno);
+
+select ename, mgr, loc 
+from emp LEFT JOIN dept using (deptno);
+
+select ename, mgr, loc 
+from emp RIGHT JOIN dept using (deptno);
+
